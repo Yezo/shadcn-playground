@@ -4,6 +4,16 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "www.lostarkmarket.online",
+        port: "",
+        pathname: "/assets/**",
+      },
+    ],
+  },
 }
 
 export default nextConfig
