@@ -60,7 +60,7 @@ export const columns: ColumnDef<marketAPI>[] = [
           <div
             className={`${handleItemRarityColor(
               rarity
-            )} hidden min-w-[35px] max-w-[35px] p-1 shadow-md ring-1 ring-black/[.25] md:block `}
+            )} hidden min-w-[35px] max-w-[35px] p-[2px] shadow-md ring-1 ring-black/[.25] md:block `}
           >
             <Image src={img} alt={img} width="35" height="35"></Image>
           </div>

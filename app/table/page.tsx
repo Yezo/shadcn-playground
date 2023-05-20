@@ -18,7 +18,7 @@ import { DataTable } from "./table"
 
 export default async function DemoPage() {
   return (
-    <div className="container mx-auto py-10 md:px-20">
+    <div className="container mx-auto py-5 md:px-20">
       <DataTable columns={columns} data={data} />
     </div>
   )
