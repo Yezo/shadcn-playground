@@ -27,11 +27,15 @@ import { DataTablePagination } from "@/app/table/components/DataTablePagination"
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[]
   data: TData[]
+  region: string
+  category: string | undefined
 }
 
 export function DataTable<TData, TValue>({
   columns,
   data,
+  region,
+  category,
 }: DataTableProps<TData, TValue>) {
   const [sorting, setSorting] = useState<SortingState>([])
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([])
@@ -52,7 +56,7 @@ export function DataTable<TData, TValue>({
 
   return (
     <div className="space-y-4">
-      <DataTableHeaderBar table={table} />
+      <DataTableHeaderBar table={table} region={region} category={category} />
       <div className="rounded-md border">
         <Table>
           <TableHeader>
