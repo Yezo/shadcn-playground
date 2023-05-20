@@ -1,5 +1,5 @@
-import { columns } from "@/app/table/columns"
-import { DataTable } from "@/app/table/table"
+import { DataTable } from "@/app/table/components/DataTable"
+import { columns } from "@/app/table/components/DataTableColumns"
 
 type Props = {
   params: {

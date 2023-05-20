@@ -5,8 +5,8 @@ import { ColumnDef } from "@tanstack/react-table"
 import { ChevronsUpDown } from "lucide-react"
 import { Sparklines, SparklinesLine } from "react-sparklines"
 
+import { marketAPI } from "@/types/marketAPI"
 import { Button } from "@/components/ui/button"
-import { marketAPI } from "@/app/table/data"
 
 const sorted = (obj: any) =>
   obj &&
