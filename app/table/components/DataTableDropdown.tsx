@@ -50,9 +50,9 @@ export function DataTableDropdown<TData>({ table }: DataTableDropdown<TData>) {
                 {column.id.toLowerCase() === "name" && "Name"}
                 {column.id.toLowerCase() === "lowprice" && "Low Price"}
                 {column.id.toLowerCase() === "recentprice" && "Recent Price"}
-                {column.id.toLowerCase() === "shorthistoric" && "Trend"}
+                {column.id.toLowerCase() === "shorthistoric" && "Market Trend"}
                 {column.id.toLowerCase() === "cheapestremaining" && "Quantity"}
-                {column.id.toLowerCase() === "updatedat" && "Updated"}
+                {column.id.toLowerCase() === "updatedat" && "Last Updated"}
               </DropdownMenuCheckboxItem>
             )
           })}
