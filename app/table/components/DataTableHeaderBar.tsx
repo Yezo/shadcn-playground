@@ -35,6 +35,7 @@ export function DataTableHeaderBar<TData>({
           title={"Category"}
           data={[
             "Enhancement Material",
+            "Engraving Recipe",
             "Combat Supplies",
             "Cooking",
             "Trader",
