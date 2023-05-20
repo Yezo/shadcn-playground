@@ -6,14 +6,10 @@ import { DataTableInputBar } from "@/app/table/components/DataTableInputBar"
 
 interface DataTableHeaderBar<TData> {
   table: Table<TData>
-  region: string
-  category: string | undefined
 }
 
 export function DataTableHeaderBar<TData>({
   table,
-  region,
-  category,
 }: DataTableHeaderBar<TData>) {
   return (
     <div className="flex items-center justify-between">
@@ -28,8 +24,6 @@ export function DataTableHeaderBar<TData>({
             "Europe West",
             "South America",
           ]}
-          region={region}
-          category={category}
         />
         <DataTableCategorySelect
           title={"Category"}
@@ -45,8 +39,6 @@ export function DataTableHeaderBar<TData>({
             "Mount",
             "Gem Chest",
           ]}
-          region={region}
-          category={category}
         />
         <DataTableDropdown table={table} />
       </div>

@@ -1,5 +1,3 @@
-import React from "react"
-
 import { columns } from "@/app/table/columns"
 import { DataTable } from "@/app/table/table"
 
@@ -22,7 +20,7 @@ async function getData(region: string, category: string | undefined) {
   return res.json()
 }
 
-export default async function page({
+export default async function Page({
   params,
   searchParams,
 }: {
@@ -33,16 +31,7 @@ export default async function page({
 
   return (
     <div className="container mx-auto py-5 md:px-20">
-      {data ? (
-        <DataTable
-          columns={columns}
-          data={data}
-          region={params.region}
-          category={searchParams.category}
-        />
-      ) : (
-        "No"
-      )}
+      {data ? <DataTable columns={columns} data={data} /> : "No"}
     </div>
   )
 }

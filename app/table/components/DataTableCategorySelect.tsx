@@ -1,8 +1,9 @@
 "use client"
 
 import Link from "next/link"
+import { useParams, useSearchParams } from "next/navigation"
 import { DropdownMenuTrigger } from "@radix-ui/react-dropdown-menu"
-import { LayoutGridIcon, MapPinIcon, SlidersHorizontal } from "lucide-react"
+import { LayoutGridIcon, MapPinIcon } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import {
@@ -14,16 +15,12 @@ import {
 type Props = {
   title: string
   data: string[]
-  region: string
-  category: string | undefined
 }
 
-export function DataTableCategorySelect({
-  title,
-  data,
-  region,
-  category,
-}: Props) {
+export function DataTableCategorySelect({ title, data }: Props) {
+  const params = useParams()
+  const region = params.region.replaceAll("%20", " ")
+  const category = useSearchParams().get("category")
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
