@@ -11,7 +11,7 @@ export const siteConfig = {
     },
     {
       title: "Table",
-      href: "/table",
+      href: "/table/North America East?category=Enhancement Material",
     },
   ],
   links: {
