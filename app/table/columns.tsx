@@ -56,7 +56,7 @@ export const columns: ColumnDef<marketAPI>[] = [
         if (rarity === 5) return "bg-gradient-to-br from-[#48220b] to-[#a24006]" //dark-orange
       }
       return (
-        <div className="flex items-center gap-3 px-4 md:min-w-[300px]">
+        <div className="flex items-center gap-3 px-4 md:max-w-[375px] md:min-w-[335px]">
           <div
             className={`${handleItemRarityColor(
               rarity
