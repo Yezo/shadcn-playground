@@ -33,7 +33,6 @@ export default async function page({
 
   return (
     <div className="container mx-auto py-5 md:px-20">
-      {searchParams?.category || "Hello!"}
       {data ? (
         <DataTable
           columns={columns}
