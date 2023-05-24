@@ -12,9 +12,9 @@ export function DataTableHeaderBar<TData>({
   table,
 }: DataTableHeaderBar<TData>) {
   return (
-    <div className="flex items-center justify-between">
+    <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
       <DataTableInputBar table={table} />
-      <div className="flex items-center gap-2">
+      <div className="flex flex-col gap-2 md:flex-row md:items-center ">
         <DataTableCategorySelect
           title={"Region"}
           data={[

@@ -24,11 +24,7 @@ export function DataTableCategorySelect({ title, data }: Props) {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button
-          variant="outline"
-          size="sm"
-          className="ml-auto hidden h-10 min-w-[210px] lg:flex"
-        >
+        <Button variant="outline" size="sm" className="h-10 min-w-[210px]">
           {title === "Region" ? (
             <div className="flex items-center justify-between gap-4">
               {region.replaceAll("%20", " ")}
