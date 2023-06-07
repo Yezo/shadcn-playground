@@ -24,21 +24,21 @@ export function DataTableCategorySelect({ title, data }: Props) {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" size="sm" className="h-10 min-w-[210px]">
+        <Button variant="outline" size="sm" className="h-10 min-w-[200px]">
           {title === "Region" ? (
-            <div className="flex items-center justify-between gap-4">
+            <div className="flex min-w-full items-center justify-between gap-4">
               {region.replaceAll("%20", " ")}
               <ChevronDownIcon size={16} />
             </div>
           ) : (
-            <div className="flex items-center  justify-between gap-4">
+            <div className="flex min-w-full items-center  justify-between gap-4">
               {category}
               <ChevronDownIcon size={16} />
             </div>
           )}
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end" className="min-w-[210px]">
+      <DropdownMenuContent align="end" className="min-w-[200px]">
         {data.map((item, index) => {
           return (
             <DropdownMenuItem
