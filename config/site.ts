@@ -13,6 +13,10 @@ export const siteConfig = {
       title: "Table",
       href: "/table/North America East?category=Enhancement Material",
     },
+    {
+      title: "Menu",
+      href: "/menu",
+    },
   ],
   links: {
     twitter: "https://twitter.com/shadcn",
