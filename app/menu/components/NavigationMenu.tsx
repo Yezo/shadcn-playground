@@ -17,10 +17,10 @@ import { Icons } from "@/components/icons"
 
 const components: { title: string; href: string; description: string }[] = [
   {
-    title: "Alert Dialog",
-    href: "/docs/primitives/alert-dialog",
+    title: "Table",
+    href: "/table/North%20America%20East?category=Enhancement%20Material",
     description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+      "A comprehensive display of tabular data with multiple functionalites",
   },
   {
     title: "Hover Card",
