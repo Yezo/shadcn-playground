@@ -13,7 +13,8 @@ type Props = {
 
 async function getData(region: string, category: string | undefined) {
   const res = await fetch(
-    `https://www.lostarkmarket.online/api/export-market-live/${region}?category=${category}`
+    `https://www.lostarkmarket.online/api/export-market-live/${region}?category=${category}`,
+    { next: { revalidate: 60 } }
   )
   if (!res.ok) throw new Error("failed to fetch data")
 
