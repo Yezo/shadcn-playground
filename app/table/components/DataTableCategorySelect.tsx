@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { useParams, useSearchParams } from "next/navigation"
 import { DropdownMenuTrigger } from "@radix-ui/react-dropdown-menu"
-import { ChevronDownIcon, LayoutGridIcon, MapPinIcon } from "lucide-react"
+import { ChevronDownIcon } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import {
