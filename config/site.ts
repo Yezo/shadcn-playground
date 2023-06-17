@@ -4,20 +4,7 @@ export const siteConfig = {
   name: "Playground",
   description:
     "Beautifully designed components built with Radix UI and Tailwind CSS.",
-  mainNav: [
-    {
-      title: "Home",
-      href: "/",
-    },
-    {
-      title: "Table",
-      href: "/table/North America East?category=Enhancement Material",
-    },
-    {
-      title: "Menu",
-      href: "/menu",
-    },
-  ],
+
   links: {
     twitter: "https://twitter.com/shadcn",
     github: "https://github.com/shadcn/ui",
