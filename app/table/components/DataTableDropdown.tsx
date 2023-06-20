@@ -9,8 +9,6 @@ import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
   DropdownMenuContent,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu"
 
 interface DataTableDropdown<TData> {
@@ -31,8 +29,6 @@ export function DataTableDropdown<TData>({ table }: DataTableDropdown<TData>) {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-[170px]">
-        <DropdownMenuLabel>Toggle</DropdownMenuLabel>
-        <DropdownMenuSeparator />
         {table
           .getAllColumns()
           .filter(
