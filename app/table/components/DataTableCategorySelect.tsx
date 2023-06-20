@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { useParams, useSearchParams } from "next/navigation"
 import { DropdownMenuTrigger } from "@radix-ui/react-dropdown-menu"
-import { ChevronDownIcon } from "lucide-react"
+import { ChevronsUpDownIcon } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import {
@@ -28,12 +28,12 @@ export function DataTableCategorySelect({ title, data }: Props) {
           {title === "Region" ? (
             <div className="flex min-w-full items-center justify-between gap-4">
               {region.replaceAll("%20", " ")}
-              <ChevronDownIcon size={16} />
+              <ChevronsUpDownIcon size={16} />
             </div>
           ) : (
             <div className="flex min-w-full items-center  justify-between gap-4">
               {category}
-              <ChevronDownIcon size={16} />
+              <ChevronsUpDownIcon size={16} />
             </div>
           )}
         </Button>
