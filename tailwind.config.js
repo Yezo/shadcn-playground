@@ -55,6 +55,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
+        spectral: ["var(--font-spectral)"],
       },
       keyframes: {
         "accordion-down": {

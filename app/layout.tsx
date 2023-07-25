@@ -1,5 +1,6 @@
 import "@/styles/globals.css"
 import { Metadata } from "next"
+import { Spectral } from "next/font/google"
 
 import { siteConfig } from "@/config/site"
 import { fontSans } from "@/lib/fonts"
@@ -22,6 +23,12 @@ export const metadata: Metadata = {
     shortcut: "/favicon-16x16.png",
   },
 }
+const spectral = Spectral({
+  variable: "--font-spectral",
+  weight: ["200", "300", "400", "500", "600"],
+  display: "swap",
+  subsets: ["latin"],
+})
 
 interface RootLayoutProps {
   children: React.ReactNode
@@ -30,7 +37,11 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <>
-      <html lang="en" suppressHydrationWarning>
+      <html
+        lang="en"
+        suppressHydrationWarning
+        className={`${spectral.variable} `}
+      >
         <body
           className={cn(
             "min-h-screen bg-background font-sans antialiased",
